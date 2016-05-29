@@ -7,6 +7,7 @@
 
 namespace yii\tools\params;
 
+use yii\tools\params\models\ActiveParam;
 use yii\tools\helpers\FormatHelper;
 
 /**
