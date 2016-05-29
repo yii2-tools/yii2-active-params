@@ -16,6 +16,7 @@ use yii\base\NotSupportedException;
 use yii\base\Component;
 use yii\base\Module as YiiModule;
 use yii\caching\DbDependency;
+use yii\tools\params\models\ActiveParam;
 use yii\tools\helpers\FormatHelper;
 use yii\tools\interfaces\ParamsHolder;
 use yii\tools\params\interfaces\ParamInterface;
@@ -53,7 +54,7 @@ class ActiveParams extends Component implements \ArrayAccess, \Iterator, \yii\ba
      *
      * @var string
      */
-    public $staticParamClass = 'yii\tools\params\models\StaticParam';
+    public $staticParamClass = 'yii\tools\params\StaticParam';
 
     /**
      * Key-value storage definition of component's params
