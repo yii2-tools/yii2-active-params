@@ -17,7 +17,7 @@ use yii\tools\components\TypeValidator;
 use yii\tools\params\models\query\ActiveParamQuery;
 
 /**
- * This is the model class for table "{{%params}}".
+ * This is the model class for table "{{%engine_params}}".
  *
  * @property string $name
  * @property string $value
@@ -35,7 +35,7 @@ class ActiveParam extends ActiveRecord implements ParamInterface
 
     const CACHE_DEPENDENCY = <<<SQL
         SELECT MAX([[updated_at]])
-        FROM {{%params}}
+        FROM {{%engine_params}}
         WHERE [[category]] = :category AND [[updated_at]] > 0
 SQL;
 
@@ -49,7 +49,7 @@ SQL;
      */
     public static function tableName()
     {
-        return '{{%params}}';
+        return '{{%engine_params}}';
     }
 
     public function formName()
