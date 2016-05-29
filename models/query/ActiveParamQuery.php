@@ -45,7 +45,7 @@ class ActiveParamQuery extends \yii\db\ActiveQuery
 
     /**
      * @inheritdoc
-     * @return \yii\tools\interfaces\ParamInterface[]|array
+     * @return \yii\tools\params\interfaces\ParamInterface[]|array
      */
     public function all($db = null)
     {
@@ -54,7 +54,7 @@ class ActiveParamQuery extends \yii\db\ActiveQuery
 
     /**
      * @inheritdoc
-     * @return \yii\tools\interfaces\ParamInterface|array|null
+     * @return \yii\tools\params\interfaces\ParamInterface|array|null
      */
     public function one($db = null)
     {

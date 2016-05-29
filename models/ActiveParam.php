@@ -12,7 +12,7 @@ use Yii;
 use yii\helpers\VarDumper;
 use yii\behaviors\TimestampBehavior;
 use yii\db\ActiveRecord;
-use yii\tools\interfaces\ParamInterface;
+use yii\tools\params\interfaces\ParamInterface;
 use yii\tools\components\TypeValidator;
 use yii\tools\params\models\query\ActiveParamQuery;
 
