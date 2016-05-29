@@ -1,0 +1,30 @@
+{
+    "name": "yii2-tools/yii2-active-params",
+    "description": "Advanced params with storage persistence for modules and components in Yii2 Application",
+    "keywords": [
+        "yii2",
+        "yii2-tools",
+        "extension",
+        "params"
+    ],
+    "type": "yii2-extension",
+    "license": "MIT",
+    "homepage": "https://github.com/yii2-tools/yii2-active-params",
+    "authors": [
+        {
+            "name": "Pavel Petrov",
+            "email": "itnelo@gmail.com",
+            "homepage": "https://github.com/itnelo",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0",
+        "yii2-tools/yii2-base": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "yii\\tools\\params\\": ""
+        }
+    }
+}
